@@ -1,5 +1,5 @@
 # ============================================================================
-# Name        : twosum.py
+# Name        : romanToInt.py
 # Author      : Saranya Balakrishnan
 # Mail Id     : saranyab0925@gmail.com
 # ============================================================================
@@ -62,12 +62,6 @@ class Solution(object):
             else:
              res += rom_val[s[i]]
         return res
-
-
-
-
-
-
 
 
 if __name__ == '__main__':
