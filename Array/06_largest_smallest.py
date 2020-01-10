@@ -1,5 +1,5 @@
 # ============================================================================
-# Name        : largest_smallest.py
+# Name        : 06_largest_smallest.py
 # Author      : Saranya Balakrishnan
 # Mail Id     : saranyab0925@gmail.com
 # ============================================================================
