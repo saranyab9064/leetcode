@@ -1,5 +1,5 @@
 # ============================================================================
-# Name        : simpleArraySum.py
+# Name        : 11_simpleArraySum.py
 # Author      : Saranya Balakrishnan
 # Mail Id     : saranyab0925@gmail.com
 # ============================================================================
