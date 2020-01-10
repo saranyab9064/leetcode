@@ -1,7 +1,7 @@
 """
 There are two sorted arrays nums1 and nums2 of size m and n respectively.
 # ============================================================================
-# Name        : median_sorted_array.py
+# Name        : 07_median_sorted_array.py
 # Author      : Saranya Balakrishnan
 # Mail Id     : saranyab0925@gmail.com
 # ============================================================================
