@@ -1,4 +1,8 @@
-
+# ============================================================================
+# Name        : 10_rotate_arr.py
+# Author      : Saranya Balakrishnan
+# Mail Id     : saranyab0925@gmail.com
+# ============================================================================
 
 def Rotate(arr,d,r):
     n=0
@@ -10,11 +14,7 @@ def Rotate(arr,d,r):
     else:
         right_rotation(arr,n)
 
-# ============================================================================
-# Name        : rotate_arr.py
-# Author      : Saranya Balakrishnan
-# Mail Id     : saranyab0925@gmail.com
-# ============================================================================
+
 def left_rotation(arr,n):
     first_element = arr[0]
     for i in range(n - 1):
