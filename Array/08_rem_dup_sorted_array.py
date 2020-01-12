@@ -40,6 +40,22 @@ for (int i = 0; i < len; i++) {
     print(nums[i]);
 }
 """
+# in-place
+class Solution(object):
+    def removeDuplicates(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        incr = 1
+        if len(nums) == 0:
+            return 0
+        for i in range(1,len(nums)):
+            if nums[incr - 1] != nums[i]:
+                nums[incr] = nums[i]
+                incr += 1
+        return incr
+# created empty list and appending the elements    
 class Solution(object):
     def removeDuplicates(self, nums):
         """
