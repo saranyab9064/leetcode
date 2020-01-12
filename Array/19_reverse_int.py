@@ -1,3 +1,9 @@
+
+# ============================================================================
+# Name        : 19_reverse_int.py
+# Author      : Saranya Balakrishnan
+# Mail Id     : saranyab0925@gmail.com
+# ============================================================================
 class Solution:
     def reverse(self, x: int) -> int:
         rev = 0
