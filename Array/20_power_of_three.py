@@ -28,7 +28,7 @@ Could you do it without using any loop / recursion?
 
 class Solution:
     def isPowerOfThree(self, n: int) -> bool:
-        if n == 0:
+        if n <= 0:
             return False
         elif 1162261467 % n == 0:
           return True
