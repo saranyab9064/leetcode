@@ -40,7 +40,6 @@ class Solution(object):
                         c = nums[k];
                         d = nums[l];
                         if a + b + c + d == target:
-                        if a + b + c + d == target:
                             temp += [[a,b,c,d]]
                             flag = True
         if flag == False:
