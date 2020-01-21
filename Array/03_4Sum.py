@@ -40,16 +40,13 @@ class Solution(object):
                         c = nums[k];
                         d = nums[l];
                         if a + b + c + d == target:
-                            #print([a, b, c, d])
-                            result =[]
-                            result.append(a)
-                            result.append(b)
-                            result.append(c)
-                            result.append(d)
-                            print(sorted(result))
+                        if a + b + c + d == target:
+                            temp += [[a,b,c,d]]
                             flag = True
         if flag == False:
-            print("sum does not exist")
+            return -1
+        else:
+            return temp
 
 if __name__ == '__main__' :
     nums = [1, 0, -1, 0, -2, 2]
