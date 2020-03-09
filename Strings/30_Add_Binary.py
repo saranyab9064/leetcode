@@ -58,7 +58,7 @@ class Solution(object):
                  sum.append('0')
              # store the quotient
              carry //= 2
-        # after iteration if carry is 1 in the last append 1 else 0 and reverse the sum
+        # after iteration if carry is 1 in the last, append 1 else 0 and reverse the sum
         if carry == 1:
             sum.append('1')
         print(sum)
