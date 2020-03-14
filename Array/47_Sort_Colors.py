@@ -37,10 +37,9 @@ class Solution(object):
         while white <= blue:
 
             current_ele = nums[white]
-            # check is curr is 0, then  swap the red and white element & incr both
+            # check is curr is 0, then  assign the red and white element & incr both
             if current_ele == 0:
                 nums[white] = nums[red]
-                nums[red] = nums[white]
                 nums[red] = 0
                 red = red + 1
                 white = white + 1
