@@ -1,4 +1,4 @@
-54_Valid_Square
+
 # ============================================================================
 # Name        : 54_Valid_Square.py
 # Author      : Saranya Balakrishnan
