@@ -34,7 +34,44 @@ class Solution(object):
         if flag == False:
             print("sum does not exist")
 
-
+"""
+# another solution
+class Solution(object):
+    def threeSum(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        # to reduce the complexity level we need to perform sorting
+        nums.sort()
+        # declare output as empty list to append the ans later
+        output = []
+        # initialise three index i,j and k pointing to
+        # i -> first element
+        # j -> second element
+        # k -> last element
+        for i in range(len(nums)-2):
+            if i > 0 and nums[i] == nums[i-1]:
+                continue
+            j = i + 1
+            k = len(nums) - 1
+            while j < k:
+                temp = nums[i] + nums[j] + nums[k]
+                if not temp:
+                    output.append([nums[i],nums[j],nums[k]])
+                    while j<len(nums)-1 and nums[j] == nums[j + 1] : 
+                        j = j + 1
+                    while k > 0 and nums[k] == nums[k - 1]: 
+                        k = k - 1
+                    j = j + 1
+                    k = k - 1
+                elif temp < 0:
+                    j = j + 1
+                else:
+                     k = k - 1
+        return output            
+        
+"""
 if __name__ == '__main__' :
     nums = [-1, 0, 1, 2, -1, -4]
     Sum = Solution()
