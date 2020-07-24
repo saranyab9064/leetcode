@@ -31,6 +31,20 @@ class Solution(object):
                 list1.remove(nums[i])
 
         return (list1)
+    """
+            h = {}
+        res = []
+        for i in range(len(nums)):
+            if nums[i] not in h:
+                h[nums[i]] = 1
+                
+            else:
+                h[nums[i]] += 1
+        for k, v in h.items():
+             if v == 1:
+                res.append(k)
+        return res
+        """
 
 
 
