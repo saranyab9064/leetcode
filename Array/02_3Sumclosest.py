@@ -24,7 +24,26 @@ class Solution(object):
                         if a+b+c == target:
                             print([a, b, c])
                             return 1
-
+    def threeSumClosest(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: int
+        """
+        nums.sort()
+        res = sum(nums[:3])
+        for i in range(len(nums)-2):
+            start = i+1
+            end = len(nums)-1
+            while start<end:
+                sum_val = nums[i]+nums[start]+nums[end]
+                if abs(sum_val-target) < abs(res-target):
+                    res = sum_val
+                if sum_val < target:
+                    start = start + 1
+                else:
+                    end = end - 1
+        return res
 
 
 if __name__ == '__main__' :
