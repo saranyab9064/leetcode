@@ -6,15 +6,20 @@ import random
 import re
 import sys
 """ full test case execution
-def super_reduced_string(s):
+# Complete the superReducedString function below.
+def superReducedString(s):
+    if len(s) == 1: return s
     stack = []
-    for c in s:
-        if stack and c == stack[-1]:
+    for char in s:
+        if stack and char == stack[-1]:
             stack.pop()
         else:
-            stack.append(c)
-
-    return ''.join(stack)
+            stack.append(char)
+    print(stack)
+    if len(stack) == 0:
+        return "Empty String" 
+    else:
+        return ''.join(stack)
     """
 # Complete the superReducedString function below.
 def superReducedString(s):
